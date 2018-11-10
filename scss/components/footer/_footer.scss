@@ -1,0 +1,56 @@
+.footer{
+	background: $primary;
+	padding: 50px 0;
+	z-index: 2;
+	position: relative;
+	color: $text-light;
+
+	.footer-inner{
+		display: flex;
+		width: calc(100% + 60px);
+		margin-left: -30px;
+		margin-right: -30px;
+		align-items: stretch;
+	}
+
+	.footer-block{
+		width: 25%;
+		padding: 0 30px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex: none;
+		align-items: flex-start;
+
+		&:before,
+		&:after{
+			content: '';
+			display: block;
+			height: 100%;
+			width: 1px;
+			position: absolute;
+			top: 0;
+		}
+
+		&:before{
+			right: 0;
+			background: #142a44;
+		}
+
+		&:after{
+			right: -1px;
+			background: #385371;
+		}
+
+		&:last-child{
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	.socials-list{
+		margin: 50px 0;
+	}
+}

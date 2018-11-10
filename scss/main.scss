@@ -1,0 +1,45 @@
+@import "components/fonts";
+@import "components/vars";
+@import "components/layout";
+@import "components/typography";
+@import "components/assist";
+@import "icons";
+
+// Header
+@import "components/header/header";
+@import "components/header/logo-block";
+@import "components/header/header-phone-block";
+@import "components/header/top-nav";
+
+// Sections
+@import "components/sections/main-slider-section";
+@import "components/sections/advantages-section";
+@import "components/sections/equipment-rent-section";
+@import "components/sections/projects-section";
+@import "components/sections/rent-section";
+@import "components/sections/brands-section";
+@import "components/sections/request-section";
+
+// Sliders
+@import "components/sliders/slick-slider";
+
+// Footer
+@import "components/footer/footer";
+@import "components/footer/footer-nav";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/panel";
+@import "components/common/contacts-links";
+@import "components/common/advantages-block";
+@import "components/common/white-card";
+@import "components/common/order-call-block";
+@import "components/common/links-row";
+@import "components/common/button-with-dashes";
+@import "components/common/big-rent-block";
+@import "components/common/brand-logo";
+@import "components/common/request-form";
+@import "components/common/socials-list";
+@import "components/common/contacts-list";
+@import "components/common/webolution";

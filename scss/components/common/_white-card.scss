@@ -1,0 +1,88 @@
+.white-card{
+	width: 100%;
+	height: calc(100% - 30px);
+	background: #fff;
+	border-bottom: 3px solid transparent;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+	color: $text-dark;
+	text-decoration: none;
+
+	.card-image{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: auto;
+		margin-bottom: 15px;
+		width: 100%;
+		position: relative;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.images-count{
+			position: absolute;
+			right: 19px;
+			top: 13px;
+			background: #fff;
+			color: $text-dark;
+			transition: all $t;
+			letter-spacing: 0;
+			font-size: 14px;
+			line-height: 23px;
+			font-weight: bold;
+			padding: 0 7px;
+			z-index: 2;
+
+			&:after{
+				content: '';
+				display: block;
+				z-index: -1;
+				width: calc(100% - 4px);
+				height: calc(100% - 4px);
+				border: 2px solid #fff;
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				transition: all $t;
+			}
+		}
+	}
+
+	.card-name{
+		flex: none;
+		min-height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		*{
+			transition: all $t;
+		}
+	}
+
+	&:hover{
+		border-bottom-color: $accent;
+		box-shadow: $shadow;
+
+		.card-image{
+			.images-count{
+				background: $accent;
+
+				&:after{
+					border-color: $accent;
+				}
+			}
+		}
+
+		.card-name *{
+			color: $accent;
+		}
+	}
+}

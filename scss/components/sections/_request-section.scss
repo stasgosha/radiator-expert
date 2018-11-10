@@ -1,0 +1,24 @@
+.request-section{
+	.request-section-inner{
+		padding: 75px 0;
+		position: relative;
+
+		.section-content{
+			width: 75%;
+			flex: none;
+			position: relative;
+			z-index: 2;
+		}
+
+		.section-image{
+			position: absolute;
+			right: -40px;
+			bottom: -10px;
+
+			img{
+				display: block;
+				height: auto;
+			}
+		}
+	}
+}

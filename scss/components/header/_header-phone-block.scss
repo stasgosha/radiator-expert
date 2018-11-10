@@ -1,0 +1,27 @@
+.header-phone-block{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	.tel-link{
+		display: inline-flex;
+		align-items: center;
+		text-decoration: none;
+		margin-bottom: 8px;
+
+		span{
+			font-size: 24px;
+			line-height: 24px;
+			color: $accent;
+			font-weight: 300;
+			margin-left: 13px;
+			transition: all $t;
+		}
+
+		&:hover{
+			span{
+				color: #fff;
+			}
+		}
+	}
+}

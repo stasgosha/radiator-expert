@@ -1,0 +1,12 @@
+.links-row{
+	display: flex;
+	align-items: center;
+
+	.item{
+		margin-right: 35px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}

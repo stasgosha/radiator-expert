@@ -1,0 +1,129 @@
+// .esm- - prefix for typography
+
+body{
+	font-size: 14px;
+	line-height: 1.71em;
+	letter-spacing: 0.05em;
+	font-weight: 300;
+	color: $text-color;
+	font-family: $main-font;
+}
+
+.esm-body-1,
+.esm-typography p,
+.esm-note{
+	font-size: 14px;
+	line-height: 1.71em;
+	letter-spacing: 0.05em;
+	margin: 0 0 24px;
+	font-weight: 300;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.esm-note{
+	font-size: 12px;
+}
+
+.esm-h1,
+.esm-typography h1{
+	font-size: 48px;
+	line-height: 1.083em;
+	font-weight: 300;
+	margin: 0 0 27px;
+	color: $text-dark;
+	text-transform: uppercase;
+
+	span{
+		font-weight: 500;
+	}
+}
+
+.esm-h2,
+.esm-typography h2{
+	font-size: 30px;
+	line-height: 1.2em;
+	margin: 0 0 27px;
+	color: $text-dark;
+	font-weight: 300;
+	text-transform: uppercase;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	span{
+		font-weight: 700;
+	}
+}
+
+.esm-h3,
+.esm-typography h3{
+	color: $text-dark;
+	font-size: 22px;
+	line-height: 26px;
+	margin: 0 0 24px;
+	font-weight: bold;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.esm-h4,
+.esm-typography h4{
+	font-size: 14px;
+	line-height: 1.71em;
+	letter-spacing: 0.05em;
+	margin: 0 0 24px;
+	font-weight: 700;
+	color: $text-dark;
+	text-transform: uppercase;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.rub{
+	font-family: 'PT Rouble Sans';
+	font-weight: 400 !important;
+}
+
+.section-caption{
+	margin-bottom: 30px;
+
+	.caption-title{
+		text-align: center;
+		padding-bottom: 8px;
+		position: relative;
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 60px;
+			height: 2px;
+			position: absolute;
+			left: calc(50% - 30px);
+			bottom: 0;
+			background: $accent;
+		}
+	}
+
+	&.left-aligned{
+		.caption-title{
+			text-align: left;
+
+			&:after{
+				left: 0;
+			}
+		}
+	}
+}

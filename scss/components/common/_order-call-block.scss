@@ -1,0 +1,18 @@
+.order-call-block{
+	display: flex;
+	width: 100%;
+	border: 13px solid #fff;
+	background: url(../img/common/team.png) no-repeat right center;
+	background-color: #f8f9fb;
+	min-height: 348px;
+	align-items: center;
+
+	.block-content{
+		max-width: 570px;
+		padding: 30px 40px;
+
+		.block-text{
+			margin-bottom: 25px;
+		}
+	}
+}

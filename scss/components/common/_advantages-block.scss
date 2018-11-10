@@ -1,0 +1,21 @@
+.advantages-block{
+	max-width: 230px;
+
+	.block-caption{
+		display: flex;
+		align-items: center;
+		min-height: 65px;
+		margin-bottom: 20px;
+
+		.caption-icon{
+			flex: none;
+			margin-right: 20px;
+		}
+
+		.caption-text{
+			flex: auto;
+		}
+	}
+
+	.block-content{}
+}
