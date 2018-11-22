@@ -1,0 +1,31 @@
+.menu-opener{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	span{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		font-size: 12px;
+		line-height: 14px;
+		margin-right: 10px;
+		display: block;
+	}
+
+	.opener{
+		display: flex;
+		flex-direction: column;
+
+		.bar{
+			width: 25px;
+			height: 2px;
+			margin-bottom: 4px;
+			background: $orange;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}

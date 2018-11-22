@@ -27,16 +27,16 @@
 				<div class="container">
 					<div class="header-inner">
 						<div class="header-left">
-							<a href="#" class="logo-block">
+							<a href="index.php" class="logo-block">
 								<img src="img/logo.png" alt="ESM Service">
 							</a>
 						</div>
 						<div class="header-right">
 							<div class="header-row">
-								<div class="header-block">
+								<div class="header-block d-none d-lg-block">
 									<p class="slogan">Аренда оборудования для мероприятий, <br>конференций и презентаций</p>
 								</div>
-								<div class="header-block">
+								<div class="header-block d-none d-lg-block">
 									<div class="contacts-links light">
 										<a href="http://www.esmedia.ru/price.xlsx" target="_blank" class="item">
 											<i class="icon-coins"></i>
@@ -48,7 +48,7 @@
 										</a>
 									</div>
 								</div>
-								<div class="header-block">
+								<div class="header-block flex-pull-right">
 									<div class="header-phone-block">
 										<a href="tel:84952353071" class="tel-link">
 											<i class="icon-phone"></i>
@@ -57,11 +57,45 @@
 										<button class="btn btn-rounded btn-small" data-toggle="modal" data-targer="#modal-call-order">Заказать звонок!</button>
 									</div>
 								</div>
+								<div class="header-block d-lg-none">
+									<div class="menu-opener">
+										<span>Меню</span>
+										<div class="opener">
+											<div class="bar"></div>
+											<div class="bar"></div>
+											<div class="bar"></div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="header-row">
+							<div class="header-row d-none d-lg-flex">
 								<ul class="top-nav">
-									<li><a href="about-company.php">О компании</a></li>
-									<li class="current-menu-item"><a href="equipment-rent.php">Аренда оборудования</a></li>
+									<!-- ↓↓↓ В первом пункте есть неразрывный пробел (Alt+255) ↓↓↓ -->
+									<li><a href="about-company.php">О компании</a></li>
+									<li>
+										<a href="equipment-rent.php">Аренда оборудования</a>
+										<ul class="sub-menu">
+											<li><a href="#">Плазменные панели</a></li>
+											<li><a href="#">Проекторы</a></li>
+											<li><a href="#">Проекционные экраны</a></li>
+											<li><a href="#">Видеостены Orion</a></li>
+											<li>
+												<a href="#">Видеостены OmniShapes</a>
+												<ul class="sub-menu">
+													<li><a href="#">Плазменные панели</a></li>
+													<li><a href="#">Проекторы</a></li>
+													<li><a href="#">Проекционные экраны</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Светодиодные экраны</a></li>
+											<li><a href="#">Звуковое оборудование</a></li>
+											<li><a href="#">Световое оборудование</a></li>
+											<li><a href="#">Сенсорные панели</a></li>
+											<li><a href="#">Видеооборудование</a></li>
+											<li><a href="#">Конференц-системы</a></li>
+											<li><a href="#">Синхронный перевод</a></li>
+										</ul>
+									</li>
 									<li><a href="rent-terms.php">Условия аренды</a></li>
 									<li><a href="prices.php">Цены</a></li>
 									<li><a href="reviews.php">Отзывы</a></li>
@@ -70,6 +104,9 @@
 								</ul>
 							</div>
 						</div>
+					</div>
+					<div class="header-catalog-btn d-lg-none">
+						<a href="equipment-rent.php" class="btn fullwidth">Каталог оборудования</a>
 					</div>
 				</div>
 			</header>
@@ -82,9 +119,40 @@
 							</a>
 						</div>
 						<div class="sticky-header-block right">
-							<ul class="top-nav">
-								<li><a href="about-company.php">О компании</a></li>
-								<li class="current-menu-item"><a href="equipment-rent.php">Аренда оборудования</a></li>
+							<div class="menu-opener d-lg-none">
+								<span>Меню</span>
+								<div class="opener">
+									<div class="bar"></div>
+									<div class="bar"></div>
+									<div class="bar"></div>
+								</div>
+							</div>
+							<ul class="top-nav d-none d-lg-flex">
+								<li><a href="about-company.php">О компании</a></li>
+								<li>
+									<a href="equipment-rent.php">Аренда оборудования</a>
+									<ul class="sub-menu">
+										<li><a href="#">Плазменные панели</a></li>
+										<li><a href="#">Проекторы</a></li>
+										<li><a href="#">Проекционные экраны</a></li>
+										<li><a href="#">Видеостены Orion</a></li>
+										<li>
+											<a href="#">Видеостены OmniShapes</a>
+											<ul class="sub-menu">
+												<li><a href="#">Плазменные панели</a></li>
+												<li><a href="#">Проекторы</a></li>
+												<li><a href="#">Проекционные экраны</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Светодиодные экраны</a></li>
+										<li><a href="#">Звуковое оборудование</a></li>
+										<li><a href="#">Световое оборудование</a></li>
+										<li><a href="#">Сенсорные панели</a></li>
+										<li><a href="#">Видеооборудование</a></li>
+										<li><a href="#">Конференц-системы</a></li>
+										<li><a href="#">Синхронный перевод</a></li>
+									</ul>
+								</li>
 								<li><a href="rent-terms.php">Условия аренды</a></li>
 								<li><a href="prices.php">Цены</a></li>
 								<li><a href="reviews.php">Отзывы</a></li>

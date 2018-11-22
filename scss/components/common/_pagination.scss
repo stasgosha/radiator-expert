@@ -1,0 +1,139 @@
+.pagination-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 80px;
+	position: relative;
+
+	&:before,
+	&:after{
+		content: '';
+		display: block;
+		width: 128px;
+		height: 1px;
+		background: #e6e6e6;
+	}
+
+	&:before{
+		margin-right: 20px;
+	}
+
+	&:after{
+		margin-left: 20px;
+	}
+}
+
+.pagination{
+	list-style: none;
+	display: flex;
+	align-items: center;
+
+	li{
+		margin-right: 1px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			min-width: 36px;
+			font-size: 14px;
+			line-height: 24px;
+			padding: 10px 8px;
+			color: $text-dark;
+			font-weight: bold;
+			text-align: center;
+			display: block;
+			background: #e6e6e6;
+
+			&:hover{
+				background: $accent;
+			}
+		}
+
+		&.current{
+			a{
+				background: $accent;
+				cursor: default;
+			}
+		}
+	}
+}
+
+.wp-pagenavi{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.inner-wrapper{
+		.inner{
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	span,
+	a{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 36px;
+		font-size: 14px;
+		line-height: 24px;
+		padding: 10px 8px;
+		margin-right: 1px;
+		text-decoration: none;
+		color: $text-dark;
+		font-weight: bold;
+		background: #e6e6e6;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover{
+			background: $accent;
+		}
+
+		&.current{
+			background: $accent;
+			cursor: default;
+		}
+	}
+
+	span{
+		cursor: default;
+		margin-right: 1px;
+
+		&:hover{
+			color: #fff;
+		}
+
+		&.extend{
+			background: transparent;
+
+			&:hover{
+				color: $text-dark;
+			}
+		}
+	}
+
+	.nextpostslink,
+	.previouspostslink{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 40px;
+		font-size: 14px;
+		line-height: 24px;
+		padding: 10px 8px;
+		text-decoration: none;
+		position: relative;
+		color: $text-dark;
+		background: #e6e6e6;
+
+		&:hover{
+			background: $accent;
+		}
+	}
+}

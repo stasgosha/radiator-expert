@@ -20,5 +20,15 @@
 				height: auto;
 			}
 		}
+
+		@media screen and (max-width: 991px){
+			.section-content{
+				width: 100%;
+			}
+
+			.section-image{
+				display: none;
+			}
+		}
 	}
 }

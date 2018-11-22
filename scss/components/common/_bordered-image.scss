@@ -1,0 +1,25 @@
+.bordered-image{
+	border: 10px solid #fff;
+	display: inline-block;
+
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	@media screen and (max-width: 767px){
+		display: inline-flex;
+		align-items: center;
+		margin: 0 auto;
+
+		&.sm-fullwidth{
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+
+			img{
+				max-width: 100% !important;
+			}
+		}
+	}
+}

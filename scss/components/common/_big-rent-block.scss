@@ -17,4 +17,14 @@
 		padding-left: 30px;
 		flex: auto;
 	}
+
+	@media screen and (max-width: 991px){
+		.block-image{
+			display: none;
+		}
+
+		.block-content{
+			padding-left: 0;
+		}
+	}
 }

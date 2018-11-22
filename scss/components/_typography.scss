@@ -9,8 +9,8 @@ body{
 	font-family: $main-font;
 }
 
-.esm-body-1,
 .esm-typography p,
+body .esm-body-1,
 .esm-note{
 	font-size: 14px;
 	line-height: 1.71em;
@@ -23,12 +23,13 @@ body{
 	}
 }
 
-.esm-note{
+body .esm-note{
 	font-size: 12px;
+	line-height: 2em;
 }
 
-.esm-h1,
-.esm-typography h1{
+.esm-typography h1,
+body .esm-h1{
 	font-size: 48px;
 	line-height: 1.083em;
 	font-weight: 300;
@@ -39,10 +40,15 @@ body{
 	span{
 		font-weight: 500;
 	}
+
+	@media screen and (max-width: 767px){
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
 }
 
-.esm-h2,
-.esm-typography h2{
+.esm-typography h2,
+body .esm-h2{
 	font-size: 30px;
 	line-height: 1.2em;
 	margin: 0 0 27px;
@@ -59,8 +65,8 @@ body{
 	}
 }
 
-.esm-h3,
-.esm-typography h3{
+.esm-typography h3,
+body .esm-h3{
 	color: $text-dark;
 	font-size: 22px;
 	line-height: 26px;
@@ -72,8 +78,8 @@ body{
 	}
 }
 
-.esm-h4,
-.esm-typography h4{
+.esm-typography h4,
+body .esm-h4{
 	font-size: 14px;
 	line-height: 1.71em;
 	letter-spacing: 0.05em;
@@ -124,6 +130,28 @@ body{
 			&:after{
 				left: 0;
 			}
+		}
+	}
+}
+
+.post-content{
+	.alignleft{
+		float: left;
+		margin-right: 40px;
+		margin-bottom: 25px;
+	}
+
+	.alignright{
+		float: right;
+		margin-left: 40px;
+		margin-bottom: 25px;
+	}
+
+	@media screen and (max-width: 991px){
+		.md-fullwidth{
+			display: block;
+			margin: 0 auto 25px;
+			float: none;
 		}
 	}
 }

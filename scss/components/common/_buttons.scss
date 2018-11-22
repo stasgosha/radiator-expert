@@ -16,11 +16,14 @@
 	justify-content: center;
 	align-items: center;
 	padding: 7px 25px;
-	min-width: 194px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
 	position: relative;
 	-webkit-appearance: none;
+
+	@media screen and (min-width: 768px){
+		min-width: 194px;
+	}
 
 	&:after{
 		content: '';
@@ -110,6 +113,27 @@
 
 		&:hover{
 			background: $accent;
+		}
+	}
+
+	&.btn-no-accent{
+		text-transform: none;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		background: #e9e7e7;
+		border: 2px solid transparent;
+		color: $text-dark;
+		letter-spacing: 0;
+		padding: 9px 25px;
+
+		&:after{
+			display: none;
+		}
+
+		&:hover{
+			background: #e9e7e7;
+			border-bottom-color: $accent;
 		}
 	}
 

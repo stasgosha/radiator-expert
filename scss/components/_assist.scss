@@ -34,28 +34,6 @@ $colors: (
 	justify-content: flex-end;
 }
 
-.big-phone-link{
-	display: inline-flex;
-	align-items: center;
-	margin-bottom: 25px;
-	text-decoration: none;
-
-	span{
-		margin-left: 15px;
-		font-size: 30px;
-		line-height: 1.2em;
-		font-weight: bold;
-		color: $text-dark;
-		transition: all $t;
-	}
-
-	&:hover{
-		span{
-			color: $primary;
-		}
-	}
-}
-
 .lift-up{
 	position: relative;
 	z-index: 2;

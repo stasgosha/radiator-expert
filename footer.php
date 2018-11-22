@@ -3,39 +3,45 @@
 			<div class="container">
 				<div class="footer-inner">
 					<div class="footer-block">
-						<a href="index.php" class="logo-block">
-							<img src="img/logo.png" alt="">
-						</a>
-						<ul class="socials-list">
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-vk"></i>
+						<div class="footer-logo-and-socials-wrapper">
+							<div class="item">
+								<a href="index.php" class="logo-block">
+									<img src="img/logo.png" alt="">
 								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-facebook"></i>
-								</a>
-							</li>
-						</ul>
+							</div>
+							<div class="item">
+								<ul class="socials-list">
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-vk"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-instagram"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-facebook"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<p>© 2018 Expo Stage Media Group
 							<br>Аренда оборудования для мероприятий, конференций и презентаций. <br>Все права защищены</p>
 					</div>
-					<div class="footer-block">
+					<div class="footer-block d-none d-lg-block">
 						<ul class="footer-nav">
 							<li>
 								<a href="equipment-rent.php">Аренда оборудования</a>
-								<ul class="submenu">
+								<ul class="sub-menu">
 									<li><a href="#">Плазменные панели</a></li>
 									<li><a href="#">Проекторы</a></li>
 									<li><a href="#">Проекционные экраны</a></li>
 									<li><a href="#">Видеостены Orion</a></li>
-									<li class="current-menu-item"><a href="#">Видеостены OmniShapes</a></li>
+									<li><a href="#">Видеостены OmniShapes</a></li>
 									<li><a href="#">Светодиодные экраны</a></li>
 									<li><a href="#">Звуковое оборудование</a></li>
 									<li><a href="#">Световое оборудование</a></li>
@@ -47,11 +53,11 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-block">
+					<div class="footer-block d-none d-lg-block">
 						<ul class="footer-nav">
 							<li>
-								<a href="#">Новости и информация</a>
-								<ul class="submenu">
+								<a href="articles.php">Новости и информация</a>
+								<ul class="sub-menu">
 									<li><a href="#">ПМЭФ-2018</a></li>
 									<li><a href="#">Выставка Продэкспо 2018</a></li>
 									<li><a href="#">Обзор новинок</a></li>
@@ -72,7 +78,8 @@
 									<i class="icon-phone"></i>
 								</div>
 								<div class="item-content">
-									<a href="tel:84952353071" class="tel-link color-accent">8 (495) <span>235-30-71</span></a>
+									<a href="tel:84952353071" class="tel-link">8 (495) <span>235-30-71</span></a>
+									<br>
 									<button class="btn btn-rounded btn-small" data-toggle="modal" data-targer="#modal-call-order">Заказать звонок!</button>
 								</div>
 							</li>
@@ -105,7 +112,36 @@
 		<div class="panel-inner">
 			<div class="panel-content"></div>
 			<ul class="panel-nav">
-				<li><a href=""></a></li>
+				<li><a href="about-company.php">О компании</a></li>
+				<li>
+					<a href="equipment-rent.php">Аренда оборудования</a>
+					<ul class="sub-menu">
+						<li><a href="#">Плазменные панели</a></li>
+						<li><a href="#">Проекторы</a></li>
+						<li><a href="#">Проекционные экраны</a></li>
+						<li><a href="#">Видеостены Orion</a></li>
+						<li>
+							<a href="#">Видеостены OmniShapes</a>
+							<ul class="sub-menu">
+								<li><a href="#">Плазменные панели</a></li>
+								<li><a href="#">Проекторы</a></li>
+								<li><a href="#">Проекционные экраны</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Светодиодные экраны</a></li>
+						<li><a href="#">Звуковое оборудование</a></li>
+						<li><a href="#">Световое оборудование</a></li>
+						<li><a href="#">Сенсорные панели</a></li>
+						<li><a href="#">Видеооборудование</a></li>
+						<li><a href="#">Конференц-системы</a></li>
+						<li><a href="#">Синхронный перевод</a></li>
+					</ul>
+				</li>
+				<li><a href="rent-terms.php">Условия аренды</a></li>
+				<li><a href="prices.php">Цены</a></li>
+				<li><a href="reviews.php">Отзывы</a></li>
+				<li><a href="projects.php">Наши проекты</a></li>
+				<li><a href="contacts.php">Контакты</a></li>
 			</ul>
 		</div>
 	</nav>

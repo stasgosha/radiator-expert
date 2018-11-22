@@ -1,3 +1,7 @@
 .advantages-section{
 	padding: 75px 0;
+
+	&.no-top-padding{
+		padding-top: 0;
+	}
 }

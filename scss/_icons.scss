@@ -2,6 +2,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	flex: none;
 }
 
 .icon-bulb{
@@ -74,4 +75,10 @@
 	width: 51px;
 	height: 53px;
 	background: url(../img/icons/wallet.png) no-repeat center center;
+}
+
+.icon-document{
+	width: 13px;
+	height: 16px;
+	background: url(../img/icons/document.png) no-repeat center center;
 }

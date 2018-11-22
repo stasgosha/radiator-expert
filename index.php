@@ -10,17 +10,30 @@
 							<div class="slide-inner">
 								<div class="slide-text esm-typography">
 									<h1 class="color-accent">Бесшовные <br><span>видеостены Orion</span></h1>
-									<p>Мы можем предложить аренду бесшовных видеостен, которые используются в основном для рекламы различных товаров и изделий.</p>
-									<div class="slide-price-block">
-										<div class="price">от <span class="bigger">1 500 <span class="rub">З</span></span></div>
-										<div class="price-info">Аренда в сутки</div>
+									<p class="d-none d-sm-block">Мы можем предложить аренду бесшовных видеостен, которые используются в основном для рекламы различных товаров и изделий.</p>
+									<div class="slide-small-image d-lg-none">
+										<!-- Для правильной адаптивности отступ нужно указывать в процентах от ширины картинки -->
+										<img src="img/slides/small/video-wall.png" alt="" style="margin-right: -20%;">
 									</div>
-									<a href="#" class="btn">Взять в аренду</a>
+									<div class="slide-price-wrapper">
+										<div class="item">
+											<div class="slide-price-block">
+												<div class="price">от <span class="bigger">1 500 <span class="rub">З</span></span></div>
+												<div class="price-info"><span class="d-none d-sm-inline">Аренда </span>в сутки</div>
+											</div>
+										</div>
+										<div class="item">
+											<a href="#" class="btn">
+												<span class="d-none d-sm-inline">Взять в аренду</span>
+												<span class="d-sm-none">Арендовать</span>
+											</a>
+										</div>
+									</div>
 								</div>
 								<!-- ↓↓↓ ID может быть любой, но должен начинаться с parallax-viewport ↓↓↓ -->
-								<div class="slide-image" id="parallax-viewport-slide-<?= $i ?>" data-friction-x="0.05" data-friction-y="0.05" data-scalar-y="12">
+								<div class="slide-image d-none d-lg-block" id="parallax-viewport-slide-<?= $i ?>" data-friction-x="0.05" data-friction-y="0.05" data-scalar-y="12">
 									<div class="parallax-layer" data-depth="0.15">
-										<img src="img/slides/video-wall.png" alt="" style="margin-right: -116px;">
+										<img src="img/slides/video-wall.png" alt="" style="margin-right: -20%;">
 									</div>
 								</div>
 							</div>
@@ -84,9 +97,8 @@
 				<div class="section-caption">
 					<h2 class="esm-h2 caption-title"><span>Аренда</span> оборудования</h2>
 				</div>
-				<!-- .equipment-rent-slider -->
-				<div class="row">
-					<div class="col-3">
+				<div class="equipment-rent-slider default-slide-paddings">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/plasma-panel.png" alt="Плазменные панели">
@@ -96,7 +108,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/projector.png" alt="Проекторы">
@@ -106,7 +118,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/projector-screen.png" alt="Проекционные экраны">
@@ -116,7 +128,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/video-wall-orion.png" alt="Видеостены Orion">
@@ -126,7 +138,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/video-wall-omnishape.png" alt="Видеостены OmniShapes">
@@ -136,7 +148,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/diod-screen.png" alt="Светодиодные экраны">
@@ -146,7 +158,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/sound.png" alt="Звуковое оборудование">
@@ -156,7 +168,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/light.png" alt="Световое оборудование">
@@ -166,7 +178,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/sensor-panel.png" alt="Сенсорные панели">
@@ -176,7 +188,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/camera.png" alt="Видеооборудование">
@@ -186,7 +198,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image">
 								<img src="img/equipment/conference-system.png" alt="Конференц-системы">
@@ -196,7 +208,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-3">
+					<div class="slide">
 						<a href="equipment-rent.php" class="white-card">
 							<div class="card-image align-self-end">
 								<img src="img/equipment/sync-translate.png" alt="Синхронный перевод" style="margin-right: -15px;">
@@ -213,7 +225,7 @@
 			<div class="container">
 				<div class="order-call-block">
 					<div class="block-content">
-						<a href="tel:84952353071" class="big-phone-link">
+						<a href="tel:84952353071" class="big-phone-link d-none d-lg-flex">
 							<i class="icon-phone-24"></i>
 							<span>8 (495) 235-30-71</span>
 						</a>
@@ -222,11 +234,17 @@
 						</div>
 						<div class="block-buttons">
 							<div class="links-row">
+								<div class="item d-lg-none">
+									<a href="tel:84952353071" class="big-phone-link no-margin">
+										<i class="icon-phone-24"></i>
+										<span>8 (495) 235-30-71</span>
+									</a>
+								</div>
 								<!-- ↓↓↓ Если класс .btn добавляется к <button>, то по неведомой магии нужно увеличить z-index именно родительского элемента. Это можно сделать добавив к нему класс .lift-up ↓↓↓ -->
 								<div class="item lift-up">
 									<button class="btn" data-toggle="modal" data-targer="#modal-call-order">Заказать звонок</button>
 								</div>
-								<div class="item">
+								<div class="item d-none d-lg-block">
 									<div class="contacts-links">
 										<a href="http://www.esmedia.ru/price.xlsx" target="_blank" class="item">
 											<i class="icon-coins"></i>
@@ -287,46 +305,46 @@
 				<div class="section-caption">
 					<h2 class="caption-title esm-h2"><span>Бренды</span> оборудования</h2>
 				</div>
-				<div class="brands-slider default-slide-paddings">
+				<div class="brands-slider default-slide-paddings with-arrows">
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/panasonic.png" alt="Panasonic Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/samsung.png" alt="Samsung Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/eiki.png" alt="Eiki Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/sanyo.png" alt="Sanyo Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/panasonic.png" alt="Panasonic Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/samsung.png" alt="Samsung Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/eiki.png" alt="Eiki Logo">
-						</a>
+						</div>
 					</div>
 					<div class="slide">
-						<a href="#" class="brand-logo">
+						<div class="brand-logo">
 							<img src="img/brands/sanyo.png" alt="Sanyo Logo">
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -358,7 +376,7 @@
 								<button type="submit" class="btn">Отправить</button>
 							</div>
 						</form>
-						<p class="esm-note">Нажимая на кнопку «Отправить», вы даете согласие <br>на обработку персональных данных</p>
+						<p class="esm-note">Нажимая на кнопку «Отправить», вы даете согласие <br class="d-none d-sm-inline">на обработку персональных данных</p>
 					</div>
 					<div class="section-image" id="parallax-viewport-support-girl" data-friction-x="0.05" data-friction-y="0.05" data-scalar-y="12">
 						<img src="img/common/support-girl.png" alt="" data-depth="0.15">
