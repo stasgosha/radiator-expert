@@ -38,7 +38,7 @@
 								<a href="equipment-rent.php">Аренда оборудования</a>
 								<ul class="sub-menu">
 									<li><a href="#">Плазменные панели</a></li>
-									<li><a href="#">Проекторы</a></li>
+									<li><a href="rent-category.php">Проекторы</a></li>
 									<li><a href="#">Проекционные экраны</a></li>
 									<li><a href="#">Видеостены Orion</a></li>
 									<li><a href="#">Видеостены OmniShapes</a></li>
@@ -64,7 +64,7 @@
 								</ul>
 							</li>
 							<li><a href="about-company.php">О компании</a></li>
-							<li><a href="rent-terms.php">Условия аренды</a></li>
+							<li><a href="#">Условия аренды</a></li>
 							<li><a href="prices.php">Цены</a></li>
 							<li><a href="reviews.php">Отзывы</a></li>
 							<li><a href="projects.php">Наши проекты</a></li>
@@ -80,7 +80,7 @@
 								<div class="item-content">
 									<a href="tel:84952353071" class="tel-link">8 (495) <span>235-30-71</span></a>
 									<br>
-									<button class="btn btn-rounded btn-small" data-toggle="modal" data-targer="#modal-call-order">Заказать звонок!</button>
+									<button class="btn btn-rounded btn-small" data-toggle="modal" data-target="#modal-call-order">Заказать звонок!</button>
 								</div>
 							</li>
 							<li>
@@ -117,7 +117,7 @@
 					<a href="equipment-rent.php">Аренда оборудования</a>
 					<ul class="sub-menu">
 						<li><a href="#">Плазменные панели</a></li>
-						<li><a href="#">Проекторы</a></li>
+						<li><a href="rent-category.php">Проекторы</a></li>
 						<li><a href="#">Проекционные экраны</a></li>
 						<li><a href="#">Видеостены Orion</a></li>
 						<li>
@@ -137,7 +137,7 @@
 						<li><a href="#">Синхронный перевод</a></li>
 					</ul>
 				</li>
-				<li><a href="rent-terms.php">Условия аренды</a></li>
+				<li><a href="#">Условия аренды</a></li>
 				<li><a href="prices.php">Цены</a></li>
 				<li><a href="reviews.php">Отзывы</a></li>
 				<li><a href="projects.php">Наши проекты</a></li>
@@ -145,25 +145,92 @@
 			</ul>
 		</div>
 	</nav>
-	<!-- <div class="modal fade narrow" tabindex="-1" role="dialog" id="modal-">
+	<div class="modal fade narrow" tabindex="-1" role="dialog" id="modal-call-order">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-body">
 					<div class="modal-close" data-dismiss="modal" aria-label="Close">
 						<i class="icon icon-close"></i>
 					</div>
-					MODAL CONTENT
+					<div class="section-caption">
+						<p class="esm-h3 caption-title text-uppercase"><span>Заказать звонок</span></p>
+					</div>
+					<form action="#" class="form">
+						<div class="form-row">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+						<div class="form-row">
+							<input type="tel" class="input-field" placeholder="Телефон">
+						</div>
+						<div class="margin-top-big">
+							<p class="text-center esm-note margin-bottom-small">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</p>
+							<button class="btn fullwidth">Жду звонка</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
+	<div class="modal fade narrow" tabindex="-1" role="dialog" id="modal-rent-order">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="modal-close" data-dismiss="modal" aria-label="Close">
+						<i class="icon icon-close"></i>
+					</div>
+					<div class="section-caption margin-bottom-big">
+						<p class="esm-h3 caption-title text-uppercase"><span>Заявка на аренду</span></p>
+					</div>
+					<p class="esm-body-2 text-center">Проектор EIKI LC-XL100, 1024x768, 10000 ANSI Lm</p>
+					<div style="width: 142px; height: 1px; background: #e6e6e6; margin: 15px auto 30px;"></div>
+					<div class="price-and-quantity small margin-bottom-normal">
+						<div class="quantity-select">
+							<div class="block-text"><span class="quantity-value">1</span> день</div>
+							<div class="controls">
+								<div class="item plus"></div>
+								<div class="item minus"></div>
+							</div>
+						</div>
+						<div class="product-price">1 500 <span class="rub">З</span></div>
+					</div>
+					<form action="#" class="form">
+						<div class="form-row">
+							<input type="text" class="input-field" placeholder="Ваше имя">
+						</div>
+						<div class="form-row">
+							<input type="tel" class="input-field" placeholder="Телефон">
+						</div>
+						<div class="margin-top-big">
+							<p class="text-center esm-note margin-bottom-small">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данных</p>
+							<button class="btn fullwidth">Отправить заявку</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade narrow" tabindex="-1" role="dialog" id="modal-success">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="modal-close" data-dismiss="modal" aria-label="Close"></div>
+					<div class="flex-center margin-bottom-medium">
+						<img src="img/icons/sended.png" alt="">
+					</div>
+					<div class="section-caption">
+						<p class="esm-h3 caption-title text-uppercase"><span>Заказать звонок</span></p>
+					</div>
+					<p class="text-center">Наш консультант свяжется с Вами в ближайшее время.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script defer src="js/bootstrap.bundle.min.js"></script>
 	<script defer src="js/bigSlide.min.js"></script>
-	<!-- <script defer src="js/tilt.min.js"></script> -->
 	<script defer src="js/scripts.js?v=<?= rand() ?>"></script>
 	<?php // wp_footer(); ?>
 </body>

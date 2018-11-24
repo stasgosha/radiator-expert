@@ -54,7 +54,7 @@
 											<i class="icon-phone"></i>
 											<span>8 (495) <strong>235-30-71</strong></span>
 										</a>
-										<button class="btn btn-rounded btn-small" data-toggle="modal" data-targer="#modal-call-order">Заказать звонок!</button>
+										<button class="btn btn-rounded btn-small" data-toggle="modal" data-target="#modal-call-order">Заказать звонок!</button>
 									</div>
 								</div>
 								<div class="header-block d-lg-none">
@@ -76,7 +76,7 @@
 										<a href="equipment-rent.php">Аренда оборудования</a>
 										<ul class="sub-menu">
 											<li><a href="#">Плазменные панели</a></li>
-											<li><a href="#">Проекторы</a></li>
+											<li><a href="rent-category.php">Проекторы</a></li>
 											<li><a href="#">Проекционные экраны</a></li>
 											<li><a href="#">Видеостены Orion</a></li>
 											<li>
@@ -96,7 +96,7 @@
 											<li><a href="#">Синхронный перевод</a></li>
 										</ul>
 									</li>
-									<li><a href="rent-terms.php">Условия аренды</a></li>
+									<li><a href="#">Условия аренды</a></li>
 									<li><a href="prices.php">Цены</a></li>
 									<li><a href="reviews.php">Отзывы</a></li>
 									<li><a href="projects.php">Наши проекты</a></li>
@@ -110,7 +110,7 @@
 					</div>
 				</div>
 			</header>
-			<div class="sticky-header">
+			<div class="sticky-header push">
 				<div class="container">
 					<div class="sticky-header-inner">
 						<div class="sticky-header-block left">
@@ -133,7 +133,7 @@
 									<a href="equipment-rent.php">Аренда оборудования</a>
 									<ul class="sub-menu">
 										<li><a href="#">Плазменные панели</a></li>
-										<li><a href="#">Проекторы</a></li>
+										<li><a href="rent-category.php">Проекторы</a></li>
 										<li><a href="#">Проекционные экраны</a></li>
 										<li><a href="#">Видеостены Orion</a></li>
 										<li>
@@ -153,7 +153,7 @@
 										<li><a href="#">Синхронный перевод</a></li>
 									</ul>
 								</li>
-								<li><a href="rent-terms.php">Условия аренды</a></li>
+								<li><a href="#">Условия аренды</a></li>
 								<li><a href="prices.php">Цены</a></li>
 								<li><a href="reviews.php">Отзывы</a></li>
 								<li><a href="projects.php">Наши проекты</a></li>

@@ -1,5 +1,5 @@
 <?php $page_title = 'Главная'; ?>
-<?php $header_class = 'transparent absolute'; ?>
+<?php $header_class = 'push transparent absolute'; ?>
 <?php include('header.php'); ?>
 	<div class="page-content">
 		<section class="main-slider-section">
@@ -19,7 +19,7 @@
 										<div class="item">
 											<div class="slide-price-block">
 												<div class="price">от <span class="bigger">1 500 <span class="rub">З</span></span></div>
-												<div class="price-info"><span class="d-none d-sm-inline">Аренда </span>в сутки</div>
+												<div class="price-info"><span class="d-none d-sm-inline">Аренда</span>в сутки</div>
 											</div>
 										</div>
 										<div class="item">

@@ -1,4 +1,4 @@
-<?php $page_title = 'Каталог статей'; ?>
+<?php $page_title = 'Наши проекты'; ?>
 <?php include('header.php'); ?>
 	<div class="page-content">
 		<section class="breadcrumbs-section">
@@ -13,31 +13,21 @@
 			<section class="section">
 				<div class="container">
 					<div class="section-caption">
-						<h1 class="esm-h2 caption-title"><span>Статьи</span></h1>
+						<h1 class="esm-h2 caption-title"><span>Наши</span> проекты</h1>
 					</div>
-					<div class="articles-list">
+					<div class="row">
 						<!-- ↓↓↓ WP loop goes here ↓↓↓ -->
-						<?php for ($i=0; $i < 4; $i++): ?>
-							<div class="item">
-								<article class="article-block">
-									<a href="single-article.php" class="article-image">
-										<img src="http://placeimg.com/375/235/any?v=<?= $i ?>" alt="">
-									</a>
-									<div class="article-content">
-										<header class="article-header">
-											<h3 class="esm-h3 margin-bottom-tiny">
-												<a href="single-article.php">Как правильно подобрать оборудование?</a>
-											</h3>
-											<time datetime="2018-01-20 19:00" class="esm-note">20 января 2018</time>
-										</header>
-										<div class="article-excerpt esm-typography">
-											<p>В рамках классической общей теории относительности сингулярности обязательно возникают при формировании чёрных дыр под горизонтом событий, в таком случае они ненаблюдаемы извне. В некоторых случаях сингулярности могут быть видны внешнему наблюдателю — так называемые голые сингулярности.</p>
-										</div>
-										<footer class="article-footer">
-											<a href="single-article.php" class="btn btn-no-accent">Читать далее</a>
-										</footer>
+						<?php for ($i=0; $i < 6; $i++): ?>
+							<div class="col-sm-6 col-lg-4">
+								<a href="#" class="white-card">
+									<div class="card-image">
+										<img src="http://placeimg.com/680/440/any?v=<?= $i ?>" alt="">
+										<div class="images-count">17</div>
 									</div>
-								</article>
+									<div class="card-name">
+										<h4 class="esm-h4">Название мероприятия</h4>
+									</div>
+								</a>
 							</div>
 						<?php endfor; ?>
 					</div>

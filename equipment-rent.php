@@ -10,11 +10,13 @@
 			</div>
 		</section>
 		<div class="inner-page-wrapper">
+			<div class="container">
+				<div class="section-caption">
+					<h1 class="esm-h2 caption-title"><span>Аренда</span> оборудования</h1>
+				</div>
+			</div>
 			<section class="equipment-rent-section">
 				<div class="container">
-					<div class="section-caption">
-						<h1 class="esm-h2 caption-title"><span>Аренда</span> оборудования</h1>
-					</div>
 					<div class="equipment-rent-slider default-slide-paddings">
 						<div class="slide">
 							<a href="equipment-rent.php" class="white-card">

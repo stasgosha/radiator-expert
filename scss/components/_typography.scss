@@ -23,9 +23,17 @@ body .esm-body-1,
 	}
 }
 
+body .esm-body-2{
+	font-weight: bold;
+}
+
+time{
+	display: block;
+}
+
 body .esm-note{
 	font-size: 12px;
-	line-height: 2em;
+	line-height: 1.667em;
 }
 
 .esm-typography h1,
@@ -93,6 +101,36 @@ body .esm-h4{
 	}
 }
 
+blockquote{
+	font-size: 22px;
+	line-height: 1.45em;
+	font-weight: 500;
+	display: flex;
+	padding: 25px 0;
+	margin: 35px 0;
+	border-top: 1px solid #e9e7e7;
+	border-bottom: 1px solid #e9e7e7;
+	color: $text-dark;
+
+	&:after{
+		content: '';
+		display: block;
+		background: url(../img/icons/quotes-orange.png) no-repeat;
+		width: 25px;
+		height: 17px;
+		margin-left: 15px;
+		flex: none;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: 575px){
+		font-size: 18px;
+	}
+}
+
 .rub{
 	font-family: 'PT Rouble Sans';
 	font-weight: 400 !important;
@@ -129,6 +167,17 @@ body .esm-h4{
 
 			&:after{
 				left: 0;
+			}
+		}
+	}
+
+	&.small{
+		.caption-title{
+			line-height: 34px;
+			border-bottom: 2px solid #e5e5e5;
+
+			&:after{
+				bottom: -2px;
 			}
 		}
 	}

@@ -17,16 +17,39 @@ $(document).ready(function(){
 		}, this), 200));
 	});
 
-	// $('.top-nav > li').hover(function(){
-	// 	clearTimeout($.data(this,'timer'));
-	// 	$('ul',this).stop(true,true).slideDown(200);
-	// 	$('ul',this).css({'z-index': 55});
-	// }, function(){
-	// 	$.data(this,'timer', setTimeout($.proxy(function() {
-	// 		$('ul',this).stop(true,true).slideUp(200);
-	// 		$('ul',this).css({'z-index': 50});
-	// 	}, this), 200));
-	// });
+	// Product card
+	$('.product-card').prepend('<div class="card-overlay"></div>');
+	$('.product-card').hover(function(){
+		if ($(window).width() >= 992) {
+			var card = $(this);
+			var overlay = card.children('.card-overlay');
+			var cardHeight = card.outerHeight();
+			var hiddenContent = card.children('.card-hidden-content');
+			var hiddenContentHeight = hiddenContent.outerHeight();
+
+			// hiddenContent.stop().show();
+			overlay.css({"height": (cardHeight + hiddenContentHeight) + "px"}, 300);
+		}
+	}, function(){
+		if ($(window).width() >= 992) {
+			var card = $(this);
+			var overlay = card.children('.card-overlay');
+			var cardHeight = card.outerHeight();
+			var hiddenContent = card.children('.card-hidden-content');
+			var hiddenContentHeight = hiddenContent.outerHeight();
+
+			// hiddenContent.stop().hide();
+			overlay.css({"height": cardHeight + "px"}, 300);
+		}
+	});
+
+	// Product Images
+	$('[data-big-image]').click(function(){
+		$('.big-image img').attr('src', $(this).data('big-image'));
+		$(this).addClass('selected').siblings().removeClass('selected');
+	});
+
+	$('[data-big-image]:first-child').click();
 
 	// Sliders
 	$('.main-slider').slick({
@@ -34,25 +57,7 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
-		arrows: true,
-		// responsive: [
-		// 	{
-		// 		breakpoint: 992,
-		// 		settings: {
-		// 			slidesToShow: 2,
-		// 			dots: true,
-		// 			arrows: true
-		// 		}
-		// 	},
-		// 	{
-		// 		breakpoint: 768,
-		// 		settings: {
-		// 			slidesToShow: 1,
-		// 			dots: true,
-		// 			arrows: false
-		// 		}
-		// 	}
-		// ]
+		arrows: true
 	});
 
 	$('.advantages-slider').slick({
@@ -188,7 +193,6 @@ $(document).ready(function(){
 			{
 				breakpoint: 768,
 				settings: {
-					variableWidth: true,
 					slidesToShow: 1,
 					dots: true,
 					arrows: true
@@ -223,11 +227,6 @@ $(document).ready(function(){
 		}
 	});
 
-	// Tilt JS
-	// $('.add-tilt').tilt({
-	// 	perspective: 1500
-	// });
-
 	// TODO: ↓↓↓ remove this script ↓↓↓
 	// Current menu item highlithing
 	$(function () {
@@ -236,8 +235,6 @@ $(document).ready(function(){
 
 		$('.top-nav li, .panel-nav li, .footer-nav li').each(function () {
 			var link = $(this).find('a').attr('href');
-
-			// console.log(link);
 
 			if (cur_url == '') {
 				cur_url = 'index.php';

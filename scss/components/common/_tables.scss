@@ -1,0 +1,41 @@
+table{
+	width: 100%;
+	border-spacing: 0px;
+	margin-bottom: 40px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	td{
+		font-size: 14px;
+		line-height: 24px;
+		color: $text-color;
+		padding: 9px 20px;
+		border-color: transparent;
+		font-weight: 400;
+	}
+
+	th{
+		padding: 9px 20px;
+		border-right: 1px solid #f3f3f3;
+		text-align: left;
+		color: #fff;
+		background: $primary;
+		font-weight: 400;
+
+		&:last-child{
+			border-right: 0;
+		}
+	}
+
+	tr{
+		&:nth-child(even){
+			background: #eaeaea;
+		}
+	}
+}

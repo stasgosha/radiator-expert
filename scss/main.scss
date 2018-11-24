@@ -20,6 +20,8 @@
 @import "components/sections/brands-section";
 @import "components/sections/request-section";
 @import "components/sections/page-404-section";
+@import "components/sections/contacts-map-section";
+@import "components/sections/prices-section";
 
 // Sliders
 @import "components/sliders/slick-slider";
@@ -53,3 +55,14 @@
 @import "components/common/bordered-image";
 @import "components/common/bordered-box";
 @import "components/common/article-block";
+@import "components/common/similar-articles-list";
+@import "components/common/product-card";
+@import "components/common/conditions-list";
+@import "components/common/links-list";
+@import "components/common/tables";
+@import "components/common/linked-image";
+
+// Product
+@import "components/product/product-images-component";
+@import "components/product/product-description-component";
+@import "components/product/specifications-list";

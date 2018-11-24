@@ -1,0 +1,32 @@
+.links-list{
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% + 30px);
+	list-style: none;
+
+	li{
+		margin-bottom: 4px;
+		margin-right: 4px;
+
+		a{
+			display: block;
+			padding: 0 15px;
+			font-size: 14px;
+			line-height: 22px;
+			border-radius: 11px;
+			color: $text-dark;
+			flex: none;
+
+			&:hover{
+				background: #fed63a;
+			}
+		}
+
+		&.current-menu-item{
+			a{
+				background: #fed63a;
+				cursor: default;
+			}
+		}
+	}
+}
