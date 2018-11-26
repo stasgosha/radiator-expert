@@ -157,7 +157,7 @@
 								<h3 class="esm-h2 caption-title"><span>Условия</span> аренды</h3>
 							</div>
 							<p class="esm-body-1">Компания Esmedia предлагает Вам воспользоваться услугами аренды видеооборудования, звукового оборудования и светового оборудования. У нас Вы также можете найти конференц-системы, системы синхроперевода, телемост, интернет-трансляции и другое. Мы предлагаем только качественное оборудование, которое поможет Вам сделать любое выступление более наглядным, а мероприятие — ярким, громким и насыщенным.</p>
-							<div class="conditions-list margin-top-huge">
+							<div class="conditions-list margin-top-huge d-none d-lg-flex">
 								<div class="item">
 									<i class="icon-coin-big"></i>
 									<span class="esm-h4">Аренда по предоплате</span>
@@ -172,7 +172,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4">
+						<div class="col-md-6 col-lg-4 sm-order-last">
 							<div class="download-contract">
 								<img src="img/common/contract.png" alt="">
 								<div class="contacts-links">
@@ -180,6 +180,22 @@
 										<i class="icon-coins"></i>
 										<span>Скачать договор</span>
 									</a>
+								</div>
+							</div>
+						</div>
+						<div class="d-lg-none col-lg-8">
+							<div class="conditions-list margin-top-huge">
+								<div class="item">
+									<i class="icon-coin-big"></i>
+									<span class="esm-h4">Аренда по предоплате</span>
+								</div>
+								<div class="item">
+									<i class="icon-wallet"></i>
+									<span class="esm-h4">Гибкая форма оплаты</span>
+								</div>
+								<div class="item">
+									<i class="icon-contract"></i>
+									<span class="esm-h4">Работаем по договору</span>
 								</div>
 							</div>
 						</div>

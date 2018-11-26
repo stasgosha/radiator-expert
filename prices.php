@@ -58,189 +58,212 @@
 			<section class="prices-section">
 				<div class="container">
 					<h3 class="esm-h3 text-center">Плазменные панели</h3>
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Модель</th>
-								<th>Характеристики</th>
-								<th>1 день</th>
-								<th>Выставка (4-5 дней)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>32 " Samsung 32F4020AW</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>46" LED телевизор Samsung UE46ES5500W</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>32 " Samsung 32F4020AW</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>46" LED телевизор Samsung UE46ES5500W</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>32 " Samsung 32F4020AW</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>46" LED телевизор Samsung UE46ES5500W</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scrollable-container">
+						<div class="scrollable-container-inner">
+							<table class="table" style="min-width: 600px;">
+								<thead>
+									<tr>
+										<th>Модель</th>
+										<th>Характеристики</th>
+										<th class="nobr">1 день</th>
+										<th>Выставка (4-5 дней)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>32 " Samsung 32F4020AW</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>46" LED телевизор Samsung UE46ES5500W</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>32 " Samsung 32F4020AW</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>46" LED телевизор Samsung UE46ES5500W</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>32 " Samsung 32F4020AW</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>46" LED телевизор Samsung UE46ES5500W</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 					<!--  -->
+					<div class="margin-bottom-huge"></div>
 					<!--  -->
 					<h3 class="esm-h3 text-center">Проекторы</h3>
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Модель</th>
-								<th>Характеристики</th>
-								<th>1 день</th>
-								<th>Выставка (4-5 дней)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>32 " Samsung 32F4020AW</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>46" LED телевизор Samsung UE46ES5500W</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>32 " Samsung 32F4020AW</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>46" LED телевизор Samsung UE46ES5500W</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>32 " Samsung 32F4020AW</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-							<tr>
-								<td>
-									<a href="#" class="linked-image">
-										<span>46" LED телевизор Samsung UE46ES5500W</span>
-										<span class="image">
-											<img src="img/common/tv-small.png" alt="">
-										</span>
-									</a>
-								</td>
-								<td>ШхВхГ 739x435x50 мм</td>
-								<td>1 500 руб.</td>
-								<td>3 500 руб.</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scrollable-container">
+						<div class="scrollable-container-inner">
+							<table class="table" style="min-width: 600px;">
+								<thead>
+									<tr>
+										<th>Модель</th>
+										<th>Характеристики</th>
+										<th class="nobr">1 день</th>
+										<th class="nobr">2 дня</th>
+										<th class="nobr">3 дня</th>
+										<th>Выставка (4-5 дней)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>32 " Samsung 32F4020AW</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>46" LED телевизор Samsung UE46ES5500W</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>32 " Samsung 32F4020AW</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>46" LED телевизор Samsung UE46ES5500W</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>32 " Samsung 32F4020AW</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="linked-image">
+												<span>46" LED телевизор Samsung UE46ES5500W</span>
+												<span class="image">
+													<img src="img/common/tv-small.png" alt="">
+												</span>
+											</a>
+										</td>
+										<td>ШхВхГ 739x435x50 мм</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">1 500 руб.</td>
+										<td class="nobr">3 500 руб.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="request-section">

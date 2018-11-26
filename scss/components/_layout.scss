@@ -113,7 +113,7 @@ a img{
 		z-index: 5;
 		border-radius: 50%;
 		cursor: pointer;
-		background: url(../img/icons/close.png) no-repeat;
+		background: url(../img/icons/icons-sprite.png) no-repeat 0 0;
 
 		@media screen and (max-width: 575px){
 			right: -15px;
@@ -126,4 +126,33 @@ a img{
 			max-width: 370px;
 		}
 	}
+}
+
+@media screen and (max-width: 767px){
+	.scrollable-container{
+		border: 1px solid #e5e8ee;
+		padding: 10px;
+
+		&:before{
+			content: '← листайте влево и вправо →';
+			text-align: center;
+			font-size: 13px;
+			color: #999;
+			margin-bottom: 10px;
+			display: block;
+		}
+
+		.scrollable-container-inner{
+			width: 100%;
+			overflow: auto;
+		}
+	}
+
+	.sm-order-last{
+		order: 999;
+	}
+}
+
+.nobr{
+	white-space: nowrap;
 }

@@ -3,100 +3,101 @@
 	align-items: center;
 	justify-content: center;
 	flex: none;
+	background: url(../img/icons/icons-sprite.png) no-repeat;
 }
 
 .icon-bulb{
 	width: 52px;
 	height: 64px;
-	background: url(../img/icons/bulb.png) no-repeat center center;
+	background-position: -167px -124px;
 }
 
 .icon-coins{
 	width: 16px;
 	height: 16px;
-	background: url(../img/icons/coins.png) no-repeat center center;
+	background-position: -17px -50px;
 }
 
 .icon-envelope{
 	width: 16px;
 	height: 12px;
-	background: url(../img/icons/envelope.png) no-repeat center center;
+	background-position: -49px -53px;
 }
 
 .icon-facebook{
 	width: 8px;
 	height: 14px;
-	background: url(../img/icons/facebook.png) no-repeat center center;
+	background-position: -48px 0;
 }
 
 .icon-hours-24{
 	width: 52px;
 	height: 52px;
-	background: url(../img/icons/hours-24.png) no-repeat center center;
+	background-position: -135px 0;
 }
 
 .icon-instagram{
 	width: 16px;
 	height: 16px;
-	background: url(../img/icons/instagram.png) no-repeat center center;
+	background-position: -57px 0;
 }
 
 .icon-location{
 	width: 12px;
 	height: 16px;
-	background: url(../img/icons/location.png) no-repeat center center;
+	background-position: -50px -18px;
 }
 
 .icon-percent{
 	width: 54px;
 	height: 54px;
-	background: url(../img/icons/percent.png) no-repeat center center;
+	background-position: -113px -67px;
 }
 
 .icon-phone-24{
 	width: 45px;
 	height: 44px;
-	background: url(../img/icons/phone-24.png) no-repeat center center;
+	background-position: 0 -124px;
 }
 
 .icon-phone{
 	width: 16px;
 	height: 16px;
-	background: url(../img/icons/phone.png) no-repeat center center;
+	background-position: -66px -49px;
 }
 
 .icon-vk{
 	width: 16px;
 	height: 9px;
-	background: url(../img/icons/vk.png) no-repeat center center;
+	background-position: -74px 0;
 }
 
 .icon-wallet{
 	width: 51px;
 	height: 53px;
-	background: url(../img/icons/wallet.png) no-repeat center center;
+	background-position: -113px -124px;
 }
 
 .icon-document{
 	width: 13px;
 	height: 16px;
-	background: url(../img/icons/document.png) no-repeat center center;
+	background-position: -35px -49px;
 }
 
 .icon-clock{
 	width: 16px;
 	height: 16px;
-	background: url(../img/icons/clock.png) no-repeat center center;
+	background-position: 0 -50px;
 }
 
 .icon-coin-big{
 	width: 55px;
 	height: 55px;
-	background: url(../img/icons/coin-big.png) no-repeat center center;
+	background-position: 0 -66px;
 }
 
 .icon-contract{
 	width: 54px;
 	height: 55px;
-	background: url(../img/icons/contract.png) no-repeat center center;
+	background-position: -56px -66px;
 }

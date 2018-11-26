@@ -231,7 +231,7 @@
 	<script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script defer src="js/bootstrap.bundle.min.js"></script>
 	<script defer src="js/bigSlide.min.js"></script>
-	<script defer src="js/scripts.js?v=<?= rand() ?>"></script>
+	<script defer src="js/scripts.js"></script>
 	<?php // wp_footer(); ?>
 </body>
 </html>
