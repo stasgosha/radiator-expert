@@ -17,189 +17,22 @@ $(document).ready(function(){
 		}, this), 200));
 	});
 
-	// Product card
-	$('.product-card').prepend('<div class="card-overlay"></div>');
-	$('.product-card').hover(function(){
-		if ($(window).width() >= 992) {
-			var card = $(this);
-			var overlay = card.children('.card-overlay');
-			var cardHeight = card.outerHeight();
-			var hiddenContent = card.children('.card-hidden-content');
-			var hiddenContentHeight = hiddenContent.outerHeight();
-
-			// hiddenContent.stop().show();
-			overlay.css({"height": (cardHeight + hiddenContentHeight) + "px"}, 300);
-		}
-	}, function(){
-		if ($(window).width() >= 992) {
-			var card = $(this);
-			var overlay = card.children('.card-overlay');
-			var cardHeight = card.outerHeight();
-			var hiddenContent = card.children('.card-hidden-content');
-			var hiddenContentHeight = hiddenContent.outerHeight();
-
-			// hiddenContent.stop().hide();
-			overlay.css({"height": cardHeight + "px"}, 300);
-		}
+	// News List
+	$('.news-list').masonry({
+		// options
+		itemSelector: '.news-list .item',
+		columnWidth: '.grid-sizer',
+		percentPosition: true
 	});
-
-	// Product Images
-	$('[data-big-image]').click(function(){
-		$('.big-image img').attr('src', $(this).data('big-image'));
-		$(this).addClass('selected').siblings().removeClass('selected');
-	});
-
-	$('[data-big-image]:first-child').click();
 
 	// Sliders
-	$('.main-slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: true
-	});
-
-	$('.advantages-slider').slick({
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		dots: false,
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 3,
-					dots: true,
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					dots: true,
-					arrows: false,
-					infinite: true
-				}
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					arrows: false,
-					infinite: true
-				}
-			}
-		]
-	});
-
-	// Equipment Rent Slider
-	var equipmentSliderFlag = false;
-
-	function equipmentSliderInit(){
-		if ( $(window).width() <= 991 && !equipmentSliderFlag) {
-			$('.equipment-rent-slider').slick({
-				infinite: true,
-				slidesToShow: 3,
-				slidesToScroll: 3,
-				dots: true,
-				arrows: false,
-				adaptiveHeight: true,
-				responsive: [
-					{
-						breakpoint: 831,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2,
-							dots: true,
-							arrows: false,
-							infinite: true
-						}
-					},
-					{
-						breakpoint: 576,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1,
-							dots: true,
-							arrows: false,
-							infinite: true
-						}
-					}
-				]
-			});
-
-			equipmentSliderFlag = true;
-		} else if($(window).width() > 991 && equipmentSliderFlag) {
-			$('.advantages-slider').slick('unslick');
-			equipmentSliderFlag = false;
-		}
-	}
-
-	if ( $(window).width() <= 991 ){
-		equipmentSliderInit();
-	}
-
-	$(window).resize(function(){
-		equipmentSliderInit();
-	});
-	// End of Equipment Rent Slider
-
-	$('.projects-slider').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		dots: false,
-		arrows: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					dots: true,
-					arrows: false
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					arrows: false,
-					infinite: true
-				}
-			}
-		]
-	});
-
-	$('.brands-slider').slick({
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		dots: false,
-		arrows: true,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 3,
-					dots: true,
-					arrows: true
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					arrows: true
-				}
-			}
-		]
-	});
+	// $('.main-slider').slick({
+	// 	infinite: true,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	dots: true,
+	// 	arrows: true
+	// });
 
 	// Parallax
 	$('[id*="parallax-viewport"]').each(function(){
@@ -215,17 +48,17 @@ $(document).ready(function(){
 	});
 
 	// Sticky Header
-	var isSticky = false;
+	// var isSticky = false;
 
-	$(window).scroll(function(){
-		if( !isSticky && $(window).scrollTop() > 170 ){
-			$('.sticky-header').addClass('visible');
-			isSticky = true;
-		} else if(isSticky && $(window).scrollTop() <= 170){
-			$('.sticky-header').removeClass('visible');
-			isSticky = false;
-		}
-	});
+	// $(window).scroll(function(){
+	// 	if( !isSticky && $(window).scrollTop() > 170 ){
+	// 		$('.sticky-header').addClass('visible');
+	// 		isSticky = true;
+	// 	} else if(isSticky && $(window).scrollTop() <= 170){
+	// 		$('.sticky-header').removeClass('visible');
+	// 		isSticky = false;
+	// 	}
+	// });
 
 	// TODO: ↓↓↓ remove this script ↓↓↓
 	// Current menu item highlithing
