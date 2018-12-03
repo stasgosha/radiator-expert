@@ -385,7 +385,12 @@ blockquote {
   color: #000; }
   .logo-block span {
     color: #f44336;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .logo-block:hover span {
+    color: #7db219; }
 
 .top-nav {
   display: -webkit-box;

@@ -6,7 +6,9 @@
 				<div class="news-list">
 					<!-- Для корректной работы скрипта (masonry) необходимо указывать высоту для .block-image, а также не забыть добавить .grid-sizer -->
 					<div class="grid-sizer"></div>
-					<div class="item">
+					<!-- data-wow-delay - задержка анимации. Может быть от 0 до 0.5 секунд -->
+					<!-- Стандартная запись - data-wow-delay="0.3s" -->
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image">
 								<img src="http://placeimg.com/270/180/any?v=<?= rand() ?>" alt="">
@@ -18,7 +20,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image big">
 								<img src="http://placeimg.com/270/390/any?v=<?= rand() ?>" alt="">
@@ -30,7 +32,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-content">
 								<h3 class="re-h3 block-caption">Заголовок статьи в несколько строк</h3>
@@ -39,7 +41,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image">
 								<img src="http://placeimg.com/270/180/any?v=<?= rand() ?>" alt="">
@@ -51,7 +53,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-content">
 								<h3 class="re-h3 block-caption">Заголовок статьи</h3>
@@ -60,7 +62,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-content">
 								<h3 class="re-h3 block-caption">Заголовок статьи в несколько строк</h3>
@@ -69,7 +71,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image big">
 								<img src="http://placeimg.com/270/390/any?v=<?= rand() ?>" alt="">
@@ -81,7 +83,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image">
 								<img src="http://placeimg.com/270/180/any?v=<?= rand() ?>" alt="">
@@ -93,7 +95,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image">
 								<img src="http://placeimg.com/270/180/any?v=<?= rand() ?>" alt="">
@@ -105,7 +107,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image">
 								<img src="http://placeimg.com/270/180/any?v=<?= rand() ?>" alt="">
@@ -117,7 +119,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-image">
 								<img src="http://placeimg.com/270/180/any?v=<?= rand() ?>" alt="">
@@ -129,7 +131,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInUp" data-wow-delay="<?= rand(0, 5) / 10 ?>s">
 						<a href="#" class="news-block">
 							<div class="block-content">
 								<h3 class="re-h3 block-caption">Запуск нового завода радиаторов в Москве впечатлил всех</h3>

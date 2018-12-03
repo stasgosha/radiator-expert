@@ -26,6 +26,9 @@ $(document).ready(function(){
 		horizontalOrder: true // для вывода блоков в том порядке, в котором они в html. Если убрать, скрипт будет заполнять пространство максимально равномерно, но нарушая порядок
 	});
 
+	// WOW animations
+	new WOW().init();
+
 	// Sliders
 	// $('.main-slider').slick({
 	// 	infinite: true,
@@ -36,10 +39,10 @@ $(document).ready(function(){
 	// });
 
 	// Parallax
-	$('[id*="parallax-viewport"]').each(function(){
-		var scene = document.getElementById( $(this).attr('id') );
-		var parallaxInstance = new Parallax(scene);
-	});
+	// $('[id*="parallax-viewport"]').each(function(){
+	// 	var scene = document.getElementById( $(this).attr('id') );
+	// 	var parallaxInstance = new Parallax(scene);
+	// });
 
 	// Scroll to anchor
 	$("body").on('click', '[href*="#"]', function(e){

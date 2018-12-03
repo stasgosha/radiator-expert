@@ -75,7 +75,7 @@
 	</nav>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
-	<script defer src="//cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<!-- <script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 	<script defer src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script defer src="js/bootstrap.bundle.min.js"></script>

@@ -8,5 +8,12 @@
 	span{
 		color: $primary;
 		font-weight: bold;
+		transition: all $t;
+	}
+
+	&:hover{
+		span{
+			color: $accent;
+		}
 	}
 }
