@@ -22,7 +22,8 @@ $(document).ready(function(){
 		// options
 		itemSelector: '.news-list .item',
 		columnWidth: '.grid-sizer',
-		percentPosition: true
+		percentPosition: true,
+		horizontalOrder: true // для вывода блоков в том порядке, в котором они в html. Если убрать, скрипт будет заполнять пространство максимально равномерно, но нарушая порядок
 	});
 
 	// Sliders

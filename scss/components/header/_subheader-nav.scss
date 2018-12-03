@@ -1,0 +1,32 @@
+.subheader-nav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	width: calc(100% + 50px);
+	margin-left: -25px;
+	margin-right: -25px;
+
+	li{
+		padding: 0 25px;
+
+		a{
+			font-size: 14px;
+			line-height: 30px;
+			color: #fff;
+			display: block;
+
+			&:hover{
+				color: $text-dark;
+			}
+		}
+
+		&.current-menu-item,
+		&.current-menu-parent{
+			a{
+				color: $text-dark;
+				cursor: default;
+			}
+		}
+	}
+}

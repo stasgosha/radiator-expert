@@ -1,29 +1,26 @@
-// .esm- - prefix for typography
+// .re- - prefix for typography
 
 body{
 	font-size: 14px;
 	line-height: 1.71em;
-	letter-spacing: 0.05em;
-	font-weight: 300;
 	color: $text-color;
 	font-family: $main-font;
 }
 
-.esm-typography p,
-body .esm-body-1,
-.esm-note{
+.re-typography p,
+body .re-body-1,
+.re-note{
 	font-size: 14px;
-	line-height: 1.71em;
-	letter-spacing: 0.05em;
-	margin: 0 0 24px;
-	font-weight: 300;
+	line-height: 1.44em;
+	margin: 0 0 10px;
+	font-weight: 400;
 
 	&:last-child{
 		margin-bottom: 0;
 	}
 }
 
-body .esm-body-2{
+body .re-body-2{
 	font-weight: bold;
 }
 
@@ -31,13 +28,14 @@ time{
 	display: block;
 }
 
-body .esm-note{
+body .re-note{
 	font-size: 12px;
 	line-height: 1.667em;
+	color: #ccc;
 }
 
-.esm-typography h1,
-body .esm-h1{
+.re-typography h1,
+body .re-h1{
 	font-size: 48px;
 	line-height: 1.083em;
 	font-weight: 300;
@@ -55,8 +53,8 @@ body .esm-h1{
 	}
 }
 
-.esm-typography h2,
-body .esm-h2{
+.re-typography h2,
+body .re-h2{
 	font-size: 30px;
 	line-height: 1.2em;
 	margin: 0 0 27px;
@@ -73,12 +71,12 @@ body .esm-h2{
 	}
 }
 
-.esm-typography h3,
-body .esm-h3{
+.re-typography h3,
+body .re-h3{
 	color: $text-dark;
-	font-size: 22px;
-	line-height: 26px;
-	margin: 0 0 24px;
+	font-size: 20px;
+	line-height: 1.1;
+	margin: 0 0 10px;
 	font-weight: bold;
 
 	&:last-child{
@@ -86,8 +84,8 @@ body .esm-h3{
 	}
 }
 
-.esm-typography h4,
-body .esm-h4{
+.re-typography h4,
+body .re-h4{
 	font-size: 14px;
 	line-height: 1.71em;
 	letter-spacing: 0.05em;
@@ -131,57 +129,52 @@ blockquote{
 	}
 }
 
-.rub{
-	font-family: 'PT Rouble Sans';
-	font-weight: 400 !important;
-}
+// .section-caption{
+// 	margin-bottom: 30px;
 
-.section-caption{
-	margin-bottom: 30px;
+// 	.caption-title{
+// 		text-align: center;
+// 		padding-bottom: 8px;
+// 		position: relative;
+// 		margin-bottom: 10px;
 
-	.caption-title{
-		text-align: center;
-		padding-bottom: 8px;
-		position: relative;
-		margin-bottom: 10px;
+// 		&:last-child{
+// 			margin-bottom: 0;
+// 		}
 
-		&:last-child{
-			margin-bottom: 0;
-		}
+// 		&:after{
+// 			content: '';
+// 			display: block;
+// 			width: 60px;
+// 			height: 2px;
+// 			position: absolute;
+// 			left: calc(50% - 30px);
+// 			bottom: 0;
+// 			background: $accent;
+// 		}
+// 	}
 
-		&:after{
-			content: '';
-			display: block;
-			width: 60px;
-			height: 2px;
-			position: absolute;
-			left: calc(50% - 30px);
-			bottom: 0;
-			background: $accent;
-		}
-	}
+// 	&.left-aligned{
+// 		.caption-title{
+// 			text-align: left;
 
-	&.left-aligned{
-		.caption-title{
-			text-align: left;
+// 			&:after{
+// 				left: 0;
+// 			}
+// 		}
+// 	}
 
-			&:after{
-				left: 0;
-			}
-		}
-	}
+// 	&.small{
+// 		.caption-title{
+// 			line-height: 34px;
+// 			border-bottom: 2px solid #e5e5e5;
 
-	&.small{
-		.caption-title{
-			line-height: 34px;
-			border-bottom: 2px solid #e5e5e5;
-
-			&:after{
-				bottom: -2px;
-			}
-		}
-	}
-}
+// 			&:after{
+// 				bottom: -2px;
+// 			}
+// 		}
+// 	}
+// }
 
 .post-content{
 	.alignleft{

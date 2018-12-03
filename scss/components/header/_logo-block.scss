@@ -1,15 +1,12 @@
 .logo-block{
-	display: flex;
-	cursor: pointer;
-	align-items: center;
+	font-family: $second-font;
+	font-size: 40px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #000;
 
-	&:hover{
-		opacity: .8;
-	}
-
-	img{
-		display: block;
-		height: auto;
-		max-width: 100%;
+	span{
+		color: $primary;
+		font-weight: bold;
 	}
 }

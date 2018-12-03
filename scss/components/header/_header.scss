@@ -1,145 +1,23 @@
 .header{
-	padding: 20px 0;
-	color: $text-light;
-	background: $primary;
+	.header-top{
+		padding: 36px 0;
+		background: #fff;
 
-	&.transparent{
-		background: transparent;
-	}
-
-	&.absolute{
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-	}
-
-	.header-inner{
-		display: flex;
-		align-items: center;
-
-		.header-left{
-			flex: none;
-			margin-right: 75px;
-		}
-
-		.header-right{
-			flex: auto;
-		}
-
-		@media screen and (max-width: 1199px){
-			.header-left{
-				margin-right: 30px;
-			}
-		}
-
-		@media screen and (max-width: 767px){
-			.header-left{
-				margin-right: 15px;
-			}
-		}
-
-		@media screen and (max-width: 991px){
-			align-items: stretch;
-
-			.header-right{
-				display: flex;
-				align-items: stretch;
-
-				.header-row{
-					flex-direction: column;
-					display: flex;
-					justify-content: space-between;
-					align-items: flex-end;
-				}
-			}
+		.header-top-inner{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
 	}
 
-	.header-row{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-bottom: 20px;
-		position: relative;
+	.header-bottom{
+		padding: 10px 0;
+		background: $accent;
 
-		&:last-child{
-			margin-bottom: 0;
+		.header-bottom-inner{
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
-
-		@media screen and (max-width: 991px){
-			margin-bottom: 0;
-
-			.flex-pull-right{
-				margin-left: auto;
-			}
-		}
-	}
-
-	.slogan{
-		line-height: 27px;
-	}
-
-	@media screen and (max-width: 991px){
-		.logo-block{
-			width: 100px;
-		}
-	}
-
-	@media screen and (max-width: 575px){
-		.logo-block{
-			width: 90px;
-		}
-	}
-
-	.header-catalog-btn{
-		margin-top: 20px;
-	}
-}
-
-.sticky-header{
-	position: fixed;
-	top: -62px;
-	width: 100%;
-	padding: 10px 0;
-	color: $text-light;
-	background: $primary;
-	z-index: 100;
-	transition: all $t;
-
-	.sticky-header-inner{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-
-		.sticky-header-block{
-			margin-right: 75px;
-			position: relative;
-
-			&.left{
-				flex: none;
-			}
-
-			&.right{
-				flex: auto;
-			}
-
-			&:last-child{
-				margin-right: 0;
-			}
-		}
-
-		@media screen and (max-width: 991px){
-			.sticky-header-block.right{
-				flex: none;
-			}
-		}
-	}
-
-	&.visible{
-		top: 0;
-		box-shadow: $shadow, 0 0px 1px rgba(#fff, .15);
 	}
 }

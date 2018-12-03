@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css?v=<?= rand() ?>">
 	<?php //wp_head(); ?>
 </head>
 <body>
@@ -24,12 +24,12 @@
 					<div class="container">
 						<div class="header-top-inner">
 							<div class="header-block">
-								<a href="index.php" class="logo-block"></a>
+								<a href="index.php" class="logo-block"><span>Radiator</span> Expert</a>
 							</div>
 							<div class="header-block">
 								<ul class="top-nav">
 									<li><a href="#">Блог</a></li>
-									<li><a href="#">Новости</a></li>
+									<li class="current-menu-item"><a href="#">Новости</a></li>
 									<li><a href="#">Выставки</a></li>
 									<li><a href="#">О проекте</a></li>
 									<li><a href="#">Обратная связь</a></li>
@@ -37,10 +37,26 @@
 							</div>
 							<div class="header-block">
 								<ul class="socials-list">
-									<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
-									<li><a href="#" target="_blank"><i class="icon-vk"></i></a></li>
-									<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
-									<li><a href="#" target="_blank"><i class="icon-telegram"></i></a></li>
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-facebook"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-vk"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<i class="icon-telegram"></i>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -49,7 +65,7 @@
 				<div class="header-bottom">
 					<div class="container">
 						<div class="header-bottom-inner">
-							<ul class="header-nav">
+							<ul class="subheader-nav">
 								<li><a href="#">Новинки</a></li>
 								<li><a href="#">Обзоры</a></li>
 								<li><a href="#">Как выбрать</a></li>

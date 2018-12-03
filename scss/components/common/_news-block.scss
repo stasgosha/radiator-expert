@@ -1,0 +1,50 @@
+.news-block{
+	color: $text-color;
+	text-decoration: none;
+	display: block;
+
+	.block-image{
+		display: block;
+		cursor: pointer;
+		overflow: hidden;
+		height: 180px;
+
+		&.big{
+			height: 390px;
+		}
+
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+			transition: all $t;
+		}
+	}
+
+	.block-content{
+		padding: 25px 30px;
+		background: #fafafa;
+		border-bottom: 2px solid #e8e8e8;
+		transition: all $t;
+
+		.block-caption{
+			transition: all $t;
+		}
+	}
+
+	&:hover{
+		.block-image{
+			img{
+				transform: scale(1.05);
+			}
+		}
+
+		.block-content{
+			border-bottom-color: $primary;
+
+			.block-caption{
+				color: $primary;
+			}
+		}
+	}
+}

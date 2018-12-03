@@ -7,79 +7,21 @@
 	text-decoration: none;
 	align-items: center;
 	text-decoration: none;
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: bold;
-	color: $text-dark;
-	text-shadow: 0 1px 0 rgba(#fff, .53);
-	background: linear-gradient(to bottom, $orange 0%, $orange-light-1 100%);
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: $r;
+	background: $primary;
+	color: #fff;
 	justify-content: center;
 	align-items: center;
-	padding: 7px 25px;
+	padding: 8px 33px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
 	position: relative;
 	-webkit-appearance: none;
 
-	@media screen and (min-width: 768px){
-		min-width: 194px;
-	}
-
-	&:after{
-		content: '';
-		display: block;
-		width: calc(100% + 2px);
-		height: calc(100% + 2px);
-		background: #977a07;
-		position: absolute;
-		bottom: -4px;
-		left: -1px;
-		z-index: -1;
-	}
-
 	&:hover{
-		background: linear-gradient(to top, $orange 0%, $orange-light-1 100%);
-	}
-
-	&:active{
-		top: 3px;
-
-		&:after{
-			bottom: -1px;
-		}
-	}
-
-	&.btn-small{
-		font-size: 10px;
-		line-height: 14px;
-		font-weight: 400;
-		letter-spacing: 0.05em;
-		min-width: auto;
-		padding: 1px 20px;
-
-		&:after{
-			bottom: -3px;
-		}
-
-		&:active{
-			top: 2px;
-
-			&:after{
-				bottom: -1px;
-			}
-		}
-	}
-
-	&.btn-rounded{
-		&, &:after{
-			border-radius: 22px;
-		}
-
-		&.btn-small{
-			&, &:after{
-				border-radius: 10px;
-			}
-		}
+		background: darken($primary, 10%);
 	}
 
 	[class^="icon-"], [class*=" icon-"]{
@@ -101,67 +43,4 @@
 			width: 100%;
 		}
 	}
-
-	&.btn-light{
-		background: transparent;
-		border-color: $accent;
-		color: $text-dark;
-
-		&:after{
-			display: none;
-		}
-
-		&:hover{
-			background: $accent;
-		}
-	}
-
-	&.btn-no-accent{
-		text-transform: none;
-		font-weight: 300;
-		font-size: 14px;
-		line-height: 24px;
-		background: #e9e7e7;
-		border: 2px solid transparent;
-		color: $text-dark;
-		letter-spacing: 0;
-		padding: 9px 25px;
-
-		&:after{
-			display: none;
-		}
-
-		&:hover{
-			background: #e9e7e7;
-			border-bottom-color: $accent;
-		}
-	}
-
-	// $btn_colors: (
-	// 	accent: $accent
-	// );
-
-	// @each $i in $btn_colors{
-	// 	$color-key: nth($i, 1);
-	// 	$color-value: nth($i, 2);
-
-	// 	&.btn-#{$color-key}{
-	// 		background: $color-value;
-
-	// 		&:hover{
-	// 			background: darken($color-value, 10%);
-	// 		}
-
-	// 		&.btn-light{
-	// 			background: transparent;
-	// 			border-color: $color-value;
-	// 			color: $color-value;
-
-	// 			&:hover{
-	// 				background: $color-value;
-	// 				border-color: $color-value;
-	// 			}
-	// 		}
-	// 	}
-	// }
 }

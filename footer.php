@@ -1,6 +1,39 @@
 		</div>
 		<footer class="footer">
-			<div class="container"></div>
+			<div class="container">
+				<div class="footer-inner">
+					<div class="footer-block">
+						<p>Radiator-Expert.ru</p>
+					</div>
+					<div class="footer-block">
+						<p>Все права защищены.</p>
+					</div>
+					<div class="footer-block">
+						<ul class="socials-list">
+							<li>
+								<a href="#" target="_blank">
+									<i class="icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="icon-vk"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="icon-telegram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<nav id="menu" class="panel">
