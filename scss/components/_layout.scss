@@ -9,6 +9,8 @@ $section-padding: 80px;
 html{
 	font-size: 14px;
 	line-height: 24px;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 body{
@@ -17,7 +19,7 @@ body{
 
 a, button{
 	text-decoration: none;
-	transition: all $t;
+	transition: color $t, background $t, border-color $t;
 	outline: none !important;
 	border: none;
 	font-family: $main-font;
@@ -42,6 +44,21 @@ a img{
 
 	.footer{
 		flex: none;
+	}
+
+	.inner-page-wrapper{
+		width: 100%;
+		max-width: 800px;
+		padding: 0 15px;
+		margin: 0 auto;
+
+		@media screen and (max-width: 991px){
+			max-width: 720px;
+		}
+
+		@media screen and (max-width: 767px){
+			max-width: 540px;
+		}
 	}
 
 	.post-content{

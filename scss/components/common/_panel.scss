@@ -2,15 +2,27 @@
 .panel{
 	overflow: hidden;
 	height: 100vh;
-	background: darken($primary, 10%);
+	background: #fff;
 	position: relative;
 	z-index: 1000;
+	opacity: box-shadow $t;
+
+	&[style*="left: 0px;"]{
+		box-shadow: 0 0 25px rgba(#000, .25);
+	}
 
 	.panel-inner{
-		padding: 20px 0;
+		padding: 35px 30px;
 		height: 100vh;
 		overflow-y: auto;
 		overflow-x: hidden !important;
+	}
+
+	.panel-divider{
+		width: calc(100% + 60px);
+		margin: 25px -30px;
+		height: 1px;
+		background: #e1e1e1;
 	}
 
 	.panel-nav{
@@ -18,26 +30,48 @@
 		width: 100%;
 		padding: 0 15px;
 
-		> li{
-			margin-bottom: 6px;
+		li{
+			margin-bottom: 18px;
 
-			> a{
-				font-size: 14px;
-				line-height: 24px;
-				color: #fff;
-				font-weight: 700;
+			a{
+				font-size: 18px;
+				line-height: 30px;
+				min-height: 30px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				color: #000;
+				font-weight: 400;
+				position: relative;
 				text-transform: uppercase;
+				text-align: center;
+				font-family: $second-font;
+
+				&:before{
+					content: '';
+					display: block;
+					width: calc(100% + 20px);
+					height: 100%;
+					position: absolute;
+					left: -10px;
+					top: 0;
+				}
 
 				&:hover{
-					color: $accent;
+					color: $primary;
 				}
 			}
 
 			&.current-menu-item,
 			&.current-menu-parent{
 				> a{
-					color: $accent;
-					text-decoration: underline;
+					color: $primary;
+				}
+			}
+
+			&.current-menu-item{
+				> a{
+					cursor: default;
 				}
 			}
 

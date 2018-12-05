@@ -7,6 +7,17 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+			margin-right: -15px;
+
+			.header-block{
+				padding: 0 15px;
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			padding: 20px 0;
 		}
 	}
 
@@ -18,6 +29,19 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+
+		@media screen and (max-width: 767px){
+			.header-bottom-inner{
+				overflow-x: auto;
+				display: block;
+			}
+
+			.header-bottom-scrollable{
+				min-width: 650px;
+				flex: none;
+				white-space: nowrap;
+			}
 		}
 	}
 }

@@ -10,9 +10,9 @@ body{
 .re-typography p,
 body .re-body-1,
 .re-note{
-	font-size: 14px;
-	line-height: 1.44em;
-	margin: 0 0 10px;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0 0 1.5em;
 	font-weight: 400;
 
 	&:last-child{
@@ -31,24 +31,18 @@ time{
 body .re-note{
 	font-size: 12px;
 	line-height: 1.667em;
-	color: #ccc;
 }
 
 .re-typography h1,
 body .re-h1{
-	font-size: 48px;
-	line-height: 1.083em;
-	font-weight: 300;
-	margin: 0 0 27px;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin: 0 0 20px;
 	color: $text-dark;
-	text-transform: uppercase;
-
-	span{
-		font-weight: 500;
-	}
 
 	@media screen and (max-width: 767px){
-		font-size: 24px;
+		font-size: 28px;
 		margin-bottom: 20px;
 	}
 }
@@ -76,7 +70,7 @@ body .re-h3{
 	color: $text-dark;
 	font-size: 20px;
 	line-height: 1.1;
-	margin: 0 0 10px;
+	margin: 0 0 1.1em;
 	font-weight: bold;
 
 	&:last-child{
@@ -100,83 +94,54 @@ body .re-h4{
 }
 
 blockquote{
-	font-size: 22px;
-	line-height: 1.45em;
-	font-weight: 500;
-	display: flex;
-	padding: 25px 0;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 700;
+	padding: 20px 130px 20px 65px;
 	margin: 35px 0;
-	border-top: 1px solid #e9e7e7;
-	border-bottom: 1px solid #e9e7e7;
+	border-left: 3px solid $primary;
 	color: $text-dark;
+	position: relative;
 
 	&:after{
 		content: '';
 		display: block;
-		background: url(../img/icons/icons-sprite.png) no-repeat -94px 0;
-		width: 25px;
-		height: 17px;
-		margin-left: 15px;
-		flex: none;
+		background: url(../img/icons/icons-sprite.png) no-repeat 0 -33px;
+		width: 71px;
+		height: 62px;
+		position: absolute;
+		right: 0;
+		top: 20px;
 	}
 
 	&:last-child{
 		margin-bottom: 0;
 	}
 
-	@media screen and (max-width: 575px){
+	@media screen and (max-width: 767px){
 		font-size: 18px;
+		padding: 20px 80px 20px 35px;
+	}
+
+	@media screen and (max-width: 575px){
+		padding: 30px 0 10px 20px;
+
+		&:after{
+			right: -3px;
+			top: 0;
+			transform: scale(0.36);
+			transform-origin: 100% 0;
+		}
 	}
 }
 
-// .section-caption{
-// 	margin-bottom: 30px;
+.post-text{
+	img{
+		margin-bottom: 40px;
+		max-width: 100%;
+		height: auto;
+	}
 
-// 	.caption-title{
-// 		text-align: center;
-// 		padding-bottom: 8px;
-// 		position: relative;
-// 		margin-bottom: 10px;
-
-// 		&:last-child{
-// 			margin-bottom: 0;
-// 		}
-
-// 		&:after{
-// 			content: '';
-// 			display: block;
-// 			width: 60px;
-// 			height: 2px;
-// 			position: absolute;
-// 			left: calc(50% - 30px);
-// 			bottom: 0;
-// 			background: $accent;
-// 		}
-// 	}
-
-// 	&.left-aligned{
-// 		.caption-title{
-// 			text-align: left;
-
-// 			&:after{
-// 				left: 0;
-// 			}
-// 		}
-// 	}
-
-// 	&.small{
-// 		.caption-title{
-// 			line-height: 34px;
-// 			border-bottom: 2px solid #e5e5e5;
-
-// 			&:after{
-// 				bottom: -2px;
-// 			}
-// 		}
-// 	}
-// }
-
-.post-content{
 	.alignleft{
 		float: left;
 		margin-right: 40px;
@@ -195,5 +160,47 @@ blockquote{
 			margin: 0 auto 25px;
 			float: none;
 		}
+	}
+}
+
+.re-typography ul,
+body .re-ul{
+	padding-left: 65px;
+	list-style: none;
+	margin-bottom: 24px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	li{
+		margin-bottom: 12px;
+		font-size: 16px;
+		line-height: 1.5;
+		position: relative;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&:before{
+			content: '';
+			display: block;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: $primary;
+			position: absolute;
+			top: 10px;
+			left: -15px;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		padding-left: 35px;
+	}
+
+	@media screen and (max-width: 575px){
+		padding-left: 20px;
 	}
 }

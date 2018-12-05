@@ -1,28 +1,24 @@
-.news-list{
+.exhibitions-list{
 	width: calc(100% + 30px);
 	margin-left: -15px;
 	margin-right: -15px;
 	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
 
-	> .grid-sizer,
 	> .item{
 		width: 25%;
-	}
-
-	> .item{
 		padding: 0 15px;
 		margin-bottom: 30px;
 	}
 
 	@media screen and (max-width: 1199px){
-		> .grid-sizer,
 		> .item{
 			width: 33.3333%;
 		}
 	}
 
 	@media screen and (max-width: 767px){
-		> .grid-sizer,
 		> .item{
 			width: 50%;
 		}
@@ -40,7 +36,6 @@
 	}
 
 	@media screen and (max-width: 429px){
-		> .grid-sizer,
 		> .item{
 			width: 100%;
 		}

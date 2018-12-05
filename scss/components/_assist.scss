@@ -34,6 +34,14 @@ $colors: (
 	justify-content: flex-end;
 }
 
+.flex-none{
+	flex: none;
+}
+
+.flex-auto{
+	flex: auto;
+}
+
 .lift-up{
 	position: relative;
 	z-index: 2;

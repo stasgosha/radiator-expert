@@ -1,0 +1,55 @@
+.breadcrumbs-section{
+	padding: 20px 0 45px;
+}
+
+.breadcrumbs{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 800px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 991px){
+		max-width: 720px;
+	}
+
+	@media screen and (max-width: 767px){
+		max-width: 540px;
+	}
+
+	&.wide{
+		max-width: 100%;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	li{
+		font-size: 12px;
+		line-height: 20px;
+		color: $text-color;
+		display: flex;
+		align-items: center;
+
+		&:after{
+			content: "\\";
+			display: block;
+			margin: 0 10px;
+		}
+
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+
+		a{
+			color: $text-color;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+}

@@ -2,35 +2,37 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-inner">
-					<div class="footer-block">
-						<p>Radiator-Expert.ru</p>
-					</div>
-					<div class="footer-block">
-						<p>Все права защищены.</p>
-					</div>
-					<div class="footer-block">
-						<ul class="socials-list">
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-vk"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" target="_blank">
-									<i class="icon-telegram"></i>
-								</a>
-							</li>
-						</ul>
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<p>Radiator-Expert.ru</p>
+						</div>
+						<div class="col-md-4">
+							<p class="text-center">Все права защищены.</p>
+						</div>
+						<div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+							<ul class="socials-list">
+								<li>
+									<a href="#" target="_blank">
+										<i class="icon-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="icon-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="icon-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="icon-telegram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -38,45 +40,42 @@
 	</div>
 	<nav id="menu" class="panel">
 		<div class="panel-inner">
-			<div class="panel-content"></div>
-			<!-- <ul class="panel-nav">
-				<li><a href="about-company.php">О компании</a></li>
+			<ul class="panel-nav">
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="exhibitions.php">Выставки</a></li>
+				<li><a href="about.php">О проекте</a></li>
+				<li><a href="feedback.php">Обратная связь</a></li>
+			</ul>
+			<div class="panel-divider"></div>
+			<ul class="socials-list">
 				<li>
-					<a href="equipment-rent.php">Аренда оборудования</a>
-					<ul class="sub-menu">
-						<li><a href="#">Плазменные панели</a></li>
-						<li><a href="rent-category.php">Проекторы</a></li>
-						<li><a href="#">Проекционные экраны</a></li>
-						<li><a href="#">Видеостены Orion</a></li>
-						<li>
-							<a href="#">Видеостены OmniShapes</a>
-							<ul class="sub-menu">
-								<li><a href="#">Плазменные панели</a></li>
-								<li><a href="#">Проекторы</a></li>
-								<li><a href="#">Проекционные экраны</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Светодиодные экраны</a></li>
-						<li><a href="#">Звуковое оборудование</a></li>
-						<li><a href="#">Световое оборудование</a></li>
-						<li><a href="#">Сенсорные панели</a></li>
-						<li><a href="#">Видеооборудование</a></li>
-						<li><a href="#">Конференц-системы</a></li>
-						<li><a href="#">Синхронный перевод</a></li>
-					</ul>
+					<a href="#" target="_blank">
+						<i class="icon-facebook"></i>
+					</a>
 				</li>
-				<li><a href="#">Условия аренды</a></li>
-				<li><a href="prices.php">Цены</a></li>
-				<li><a href="reviews.php">Отзывы</a></li>
-				<li><a href="projects.php">Наши проекты</a></li>
-				<li><a href="contacts.php">Контакты</a></li>
-			</ul> -->
+				<li>
+					<a href="#" target="_blank">
+						<i class="icon-vk"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="icon-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">
+						<i class="icon-telegram"></i>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script defer src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<!-- <script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+	<script defer src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script defer src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<script defer src="js/bootstrap.bundle.min.js"></script>
 	<script defer src="js/bigSlide.min.js"></script>

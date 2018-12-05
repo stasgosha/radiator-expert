@@ -2,9 +2,9 @@ $(document).ready(function(){
 
 	// Mobile nav
 	$('.menu-opener').bigSlide({
-		side: 'right',
+		side: 'left',
 		easyClose: true,
-		menuWidth: '260px'
+		menuWidth: '270px'
 	});
 
 	// Top Nav
@@ -17,14 +17,34 @@ $(document).ready(function(){
 		}, this), 200));
 	});
 
-	// News List
-	$('.news-list').masonry({
-		// options
-		itemSelector: '.news-list .item',
-		columnWidth: '.grid-sizer',
-		percentPosition: true,
-		horizontalOrder: true // для вывода блоков в том порядке, в котором они в html. Если убрать, скрипт будет заполнять пространство максимально равномерно, но нарушая порядок
+	// Textarea
+	$('.input-field, .textarea').on('keyup', function(){
+		if( $(this).val() !== '' ){
+			$(this).addClass('not-empty');
+		} else{
+			$(this).removeClass('not-empty');
+		}
 	});
+
+	$('.input-field, .textarea').each(function(){
+		if( $(this).val() !== '' ){
+			$(this).addClass('not-empty');
+		} else{
+			$(this).removeClass('not-empty');
+		}
+	});
+
+	// News List
+	// Инициализация Масонри, после загрузки изображений
+	// $('.news-list').imagesLoaded( function() {
+		$('.news-list').masonry({
+			// options
+			itemSelector: '.news-list .item',
+			columnWidth: '.grid-sizer',
+			percentPosition: true,
+			horizontalOrder: true // для вывода блоков в том порядке, в котором они в html. Если убрать, скрипт будет заполнять пространство максимально равномерно, но нарушая порядок
+		});
+	// });
 
 	// WOW animations
 	new WOW().init();

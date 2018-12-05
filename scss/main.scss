@@ -13,6 +13,7 @@
 
 // Sections
 @import "components/sections/news-section";
+@import "components/sections/page-404-section";
 
 // Sliders
 @import "components/sliders/slick-slider";
@@ -28,3 +29,9 @@
 @import "components/common/socials-list";
 @import "components/common/news-list";
 @import "components/common/news-block";
+@import "components/common/breadcrumbs";
+@import "components/common/post";
+@import "components/common/tags-list";
+@import "components/common/exhibitions-list";
+@import "components/common/month-nav";
+@import "components/common/forms";

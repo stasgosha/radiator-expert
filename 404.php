@@ -14,14 +14,11 @@
 				<div class="container">
 					<div class="page-404-content">
 						<div class="image">
-							<img src="img/404/404.png" alt="">
+							<img src="img/404.png" alt="">
 						</div>
 						<p>Ой, тут должна была быть страница, <br>но что-то пошло не так</p>
-						<div class="line">
-							<img src="img/404/404-line.png" alt="">
-						</div>
 						<div class="flex-center">
-							<a href="index.php" class="btn">Вернуться на главную</a>
+							<a href="index.php" class="btn">На главную</a>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,94 @@
+.feedback-form{
+	margin-top: 30px;
+	padding: 30px;
+	background: #fafafa;
+}
+
+.form{
+	.form-row{
+		margin-bottom: 40px;
+		margin-top: 20px;
+
+		@media screen and (max-width: 767px){
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.form-field{
+	position: relative;
+
+	label{
+		position: absolute;
+		left: 0;
+		top: 9px;
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: $text-dark;
+		transition: all $t;
+		font-weight: bold;
+		cursor: text;
+
+		span{
+			color: #e53935;
+			display: inline-block;
+			transform: translate(-2px, -3px);
+		}
+	}
+
+	.input-field,
+	.textarea{
+		&:focus,
+		&.not-empty{
+			+ label{
+				top: -14px;
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+.input-field,
+.textarea{
+	height: 40px;
+	font-size: 14px;
+	line-height: 20px;
+	width: 100%;
+	outline: none !important;
+	transition: all $t;
+	color: $text-dark;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #dbdbdb;
+	font-family: $main-font;
+	-webkit-appearance: none;
+
+	&:focus{
+		border-bottom-color: $primary;
+	}
+
+	&::placeholder{
+		color: $text-dark;
+	}
+
+	&:disabled{
+		background: #212833;
+	}
+
+	&.error{
+		border-color: red;
+		color: red;
+	}
+}
+
+.textarea{
+	padding: 9px 0;
+	resize: none;
+	overflow: hidden;
+
+	&:focus,
+	&.not-empty{
+		height: 170px;
+	}
+}
